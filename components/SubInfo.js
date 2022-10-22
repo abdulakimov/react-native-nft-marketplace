@@ -2,7 +2,7 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import { assets, COLORS, FONTS, SHADOWS, SIZES } from "../constants";
 
-const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
+export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   return (
     <View>
       <Text
@@ -27,7 +27,7 @@ const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   );
 };
 
-const EthPrice = ({ price }) => {
+export const EthPrice = ({ price }) => {
   return (
     <View style={{ flexDirection: "row", alignItems: "center" }}>
       <Image
@@ -48,7 +48,7 @@ const EthPrice = ({ price }) => {
   );
 };
 
-const ImageCmp = ({ imgUrl, index }) => {
+export const ImageCmp = ({ imgUrl, index }) => {
   return (
     <Image
       source={imgUrl}
@@ -62,7 +62,7 @@ const ImageCmp = ({ imgUrl, index }) => {
   );
 };
 
-const People = () => {
+export const People = () => {
   return (
     <View style={{ flexDirection: "row" }}>
       {[assets.person02, assets.person03, assets.person04].map(
@@ -74,7 +74,7 @@ const People = () => {
   );
 };
 
-const EndDate = () => {
+export const EndDate = () => {
   return (
     <View
       style={{
@@ -110,7 +110,7 @@ const EndDate = () => {
   );
 };
 
-const SubInfo = () => {
+export const SubInfo = () => {
   return (
     <View
       style={{
@@ -126,4 +126,3 @@ const SubInfo = () => {
     </View>
   );
 };
-export { NFTTitle, EthPrice, ImageCmp, People, EndDate, SubInfo };

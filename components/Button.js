@@ -25,7 +25,13 @@ const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   );
 };
 
-const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
+const RectButton = ({
+  minWidth,
+  fontSize,
+  handlePress,
+  paddingHorizontal,
+  ...props
+}) => {
   return (
     <TouchableOpacity
       style={{
@@ -42,6 +48,7 @@ const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
           fontSize: fontSize,
           color: COLORS.white,
           textAlign: "center",
+          paddingHorizontal: paddingHorizontal,
         }}
       >
         Place a bid
